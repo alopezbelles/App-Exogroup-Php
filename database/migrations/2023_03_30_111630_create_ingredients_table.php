@@ -12,7 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ingredients', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id')->primary();
+            $table->string('name');
+            $table->integer('cost_price');
             $table->timestamps();
         });
     }
