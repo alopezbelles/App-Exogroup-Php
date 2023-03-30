@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->decimal('cost_price',8,2);
             $table->timestamps();
+            // $table->primary('id');
         });
     }
 
