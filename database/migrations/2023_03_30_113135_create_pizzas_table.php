@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pizzas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('selling_price');
+            $table->decimal('selling_price',8,2);
             $table->timestamps();
         });
     }

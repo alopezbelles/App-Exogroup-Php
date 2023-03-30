@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('cost_price');
+            $table->decimal('cost_price',8,2);
             $table->timestamps();
         });
     }
