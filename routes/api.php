@@ -18,6 +18,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Get all pizzas
+//Get all pizzas (name)
 
 Route::get('/pizzas', [PizzaController::class, 'index']);
+
+//Get all ingredients
+Route::get('/ingredients', [IngredientController::class, 'index']);

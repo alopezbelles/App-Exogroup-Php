@@ -21,4 +21,6 @@ Route::get('/', function () {
 // Route::get('/pizzas', [PizzaController::class, 'index']);
 Route::get('/pizzas', [App\Http\Controllers\PizzaController::class, 'index']);
 
+//Get all ingredients
+Route::get('/ingredients', [App\Http\Controllers\IngredientController::class, 'index']);
 
