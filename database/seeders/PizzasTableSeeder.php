@@ -14,11 +14,11 @@ class PizzasTableSeeder extends Seeder
     {
         Pizza::create([
             'name' => 'The Fun Pizza',
-            'selling_price' => 0.5,
+            'selling_price' => 7.5,
         ]);
         Pizza::create([
             'name' => 'The Super Mushroom',
-            'selling_price' => 5,
+            'selling_price' => 5.25,
         ]);
         Pizza::create([
             'name' => 'Margarita',

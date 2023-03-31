@@ -28,3 +28,5 @@ Route::get('/ingredients', [App\Http\Controllers\IngredientController::class, 'i
 //Get pizza by id, metodo GET
 Route::get('/pizzas/{id}/ingredients', 'PizzaController@showIngredients');
 
+//Add ingredients 
+Route::post('/pizza-ingredient', 'PizzaIngredientController@addIngredientToPizza');
