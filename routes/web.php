@@ -24,3 +24,7 @@ Route::get('/pizzas', [App\Http\Controllers\PizzaController::class, 'index']);
 //Get all ingredients
 Route::get('/ingredients', [App\Http\Controllers\IngredientController::class, 'index']);
 
+
+//Get pizza by id, metodo GET
+Route::get('/pizzas/{id}/ingredients', 'PizzaController@showIngredients');
+
