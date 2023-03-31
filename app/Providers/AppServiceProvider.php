@@ -11,7 +11,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        //Esto lo añado para poder ejecutar los controllers
+        // $this->app->setNamespace('App');
+
     }
 
     /**
